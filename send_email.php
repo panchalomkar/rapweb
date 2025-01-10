@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br>Product: $product<br>Services: $services<br>Message: $message";
 
         $mail->send();
-        echo 'Message has been sent successfully!';
+        // echo 'Message has been sent successfully!';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }

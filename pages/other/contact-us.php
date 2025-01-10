@@ -121,8 +121,8 @@
 
                                 <div class="col-12">
                                     <div class="form-group login-btn">
-                                        <button style="width: 100px;" class="btn" name="send" 
-                                            value="Send">Send</button>
+                                        <button style="width: 100px; color:#003152; background:#ec9707;" class="btn"
+                                            name="send" value="Send">Send</button>
                                     </div>
                                     <!-- <div class="checkbox">
                                         <label class="checkbox-inline" for="2"><input

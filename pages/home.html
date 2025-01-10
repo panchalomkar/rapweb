@@ -16,25 +16,23 @@
 								Solutions Powered by machine
 								learning for personalized experiences </h1>
 
-							<div class=" d-flex flex-column slider_card justify-content-center"
-								style="background: transparent; ">
+							<div class="d-flex flex-column slider_card justify-content-center"
+								style="background: transparent;">
 								<div
 									class="bg d-flex justify-content-center flex-column align-items-center rounded-bottom rounded-top"
-									style="background: #ec9707;position: relative;z-index: 999;min-width: 610px;">
-									<strong class="slider_text">Ready to transform
-										your learning with
-										RAP LMS</strong>
-
-									<div class="button " style="width: 200px;">
-										<input type="email" class="form-control"
-											id="exampleInputEmail1"
-											aria-describedby="emailHelp"
-											placeholder="Enter Offical Email ID">
-
+									style="background: #ec9707; position: relative; z-index: 999; min-width: 610px;">
+									<strong class="slider_text">Ready to transform your learning with RAP
+										Learning</strong>
+									<div class="button" style="width: 200px;">
+										<input type="email" class="form-control" id="officialEmailInput"
+											placeholder="Enter Official Email ID">
 									</div>
+									<span id="emailError" style="display:none; color:red;">Please enter a
+										valid official email.</span>
 								</div>
 								<div class="input_btn mt-2">
-									<a href="#" class="btn">Book A Demo</a>
+									<a href="#" id="bookDemoButton" class="btn trigger-modal-btn1"
+										style="pointer-events: none; opacity: 0.5;">Book A Demo</a>
 								</div>
 							</div>
 						</div>
@@ -65,16 +63,20 @@
 									class="bg d-flex justify-content-center flex-column align-items-center rounded-bottom rounded-top"
 									style="background: #ec9707; position: relative; z-index: 999; min-width: 610px;">
 									<strong class="slider_text">Ready to transform your learning with RAP
-										LMS</strong>
+										Learning</strong>
 									<div class="button" style="width: 200px;">
-										<input type="email" class="form-control" id="exampleInputEmail1"
-											aria-describedby="emailHelp" placeholder="Enter Official Email ID">
+										<input type="email" class="form-control" id="officialEmailInput1"
+											placeholder="Enter Official Email ID">
 									</div>
+									<span id="emailError1" style="display:none; color:red;">Please enter a
+										valid official email.</span>
 								</div>
 								<div class="input_btn mt-2">
-									<a href="#" class="btn">Book A Demo</a>
+									<a href="#" id="bookDemoButton1" class="btn trigger-modal-btn1"
+										style="pointer-events: none; opacity: 0.5;">Book A Demo</a>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -345,7 +347,7 @@
 			<div class="col-lg-12">
 				<div class="section-title">
 					<h2>Innovate Your Learning Experience with
-						AI-Enabled RAP LMS
+						AI-Enabled RAP Learning
 					</h2>
 					<img width="50px" src="img/section-img.png" alt="#">
 					<p>What We Provide
@@ -360,7 +362,7 @@
 				<!-- Start Single features -->
 				<div class="card single-features">
 					<div class="card-img signle-icon">
-						<img width="300px" src="img/p/aic.gif" alt>
+						<img width="300px" data-src="img/p/aic.gif" class="lazy-load-img" alt>
 					</div>
 					<div class="card-body">
 						<h3>AI-Powered Corporate LMS</h3>
@@ -379,7 +381,7 @@
 				<!-- Start Single features -->
 				<div class=" card single-features">
 					<div class="card-img signle-icon">
-						<img width="300px" src="img/p/tools.gif" alt>
+						<img width="300px" data-src="img/p/tools.gif" class="lazy-load-img" alt>
 					</div>
 					<div class="card-body">
 						<h3>AI-Powered Authoring Tools
@@ -400,7 +402,8 @@
 				<!-- Start Single features -->
 				<div class="card single-features last">
 					<div class="card-img signle-icon">
-						<img width="300px" src="img/p/education.gif" alt>
+						<img width="300px" data-src="img/p/education.gif" class="lazy-load-img"
+							alt>
 					</div>
 					<div class="card-body">
 						<h3>AI-Powered Educational LMS
@@ -421,7 +424,7 @@
 				<div class="card single-features">
 
 					<div class="card-img signle-icon">
-						<img width="300px" src="img/p/offthes.gif" alt>
+						<img width="300px" data-src="img/p/offthes.gif" class="lazy-load-img" alt>
 					</div>
 					<div class="card-body">
 						<h3>Off the shelf Library
@@ -443,7 +446,7 @@
 				<!-- Start Single features -->
 				<div class="card single-features">
 					<div class="card-img signle-icon">
-						<img width="300px" src="img/p/plugind.gif" alt>
+						<img width="300px" data-src="img/p/plugind.gif" class="lazy-load-img" alt>
 					</div>
 					<div class="card-body">
 						<h3>UI/UX and Plugin Development
@@ -464,7 +467,7 @@
 				<!-- Start Single features -->
 				<div class="card single-features last">
 					<div class="card-img signle-icon">
-						<img width="300px" src="img/p/l-app.gif" alt>
+						<img width="300px" data-src="img/p/l-app.gif" class="lazy-load-img" alt>
 					</div>
 					<div class="card-body">
 						<h3>Learning APP Development
@@ -483,6 +486,30 @@
 				<!-- End Single features -->
 			</div>
 
+		</div>
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-6 col-12">
+				<!-- Start Single features -->
+				<div class="card single-features">
+					<div class="card-img signle-icon">
+						<img width="300px" data-src="img/elearning-c.gif" class="lazy-load-img"
+							alt>
+					</div>
+					<div class="card-body">
+						<h3>Custom E-Learning Solutions
+
+						</h3>
+						<p>Design and development services focused on creating user-friendly
+							interfaces, intuitive user experiences, and custom plugins to enhance
+							the functionality of LMS platforms or apps
+
+						</p>
+						<a class="pro btn" href="index.php?page=e-learning">LEARN MORE<i
+								class="fa fa-long-arrow-right"></i></a>
+					</div>
+				</div>
+				<!-- End Single features -->
+			</div>
 		</div>
 
 	</div>
@@ -506,7 +533,7 @@
 						making it a comprehensive solution for modern educational and training
 						environments.
 					</p>
-					<a class="pro btn trigger-modal-btn1" href="#">Get In Touch<i
+					<a class="pro btn trigger-modal-btn1" href="#">Book A Demo<i
 							class="fa fa-long-arrow-right"></i></a>
 				</div>
 				<!-- End Choose Left -->
@@ -529,7 +556,8 @@
 	<img data-src="img/sched.gif" alt class="lazy-load-img">
 
 	<div class="button" style="position: relative; bottom: 60px; left: 84px;">
-		<a href="#" class="btn text-white" style="background: #ec9707;">Request Demo</a>
+		<a href="#" class="btn text-white trigger-modal-btn1"
+			style="background: #ec9707;">Book A Demo</a>
 	</div>
 </div>
 <!--/ End Call to action -->
@@ -588,15 +616,61 @@
       
       const emailInput = document.getElementById("email");
       const emailError = document.getElementById("emailError");
-      
-      // Regular expression to validate only emails from specific domain (replace 'company' with your domain)
-      const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@company\.com$/;
+
+	  const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
 
       if (officialEmailPattern.test(emailInput.value)) {
         emailError.style.display = "none";
         alert("Form submitted successfully!");  // Replace with form submission logic
+		const modalOverlay = document.getElementById("modalOverlay");
+		modalOverlay.style.display = "none";
+		window.location.reload();
       } else {
         emailError.style.display = "inline";
       }
     });
+
+	document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("officialEmailInput");
+  const emailInput1 = document.getElementById("officialEmailInput1");
+  const emailError = document.getElementById("emailError");
+    const emailError1 = document.getElementById("emailError1");
+  const bookDemoButton = document.getElementById("bookDemoButton");
+  const bookDemoButton1 = document.getElementById("bookDemoButton1");
+
+  // Regular expression to validate official emails
+  const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
+
+  // Add an event listener to the email input
+  emailInput.addEventListener("input", function () {
+    if (officialEmailPattern.test(emailInput.value)) {
+      emailError.style.display = "none";
+      bookDemoButton.style.pointerEvents = "auto";
+      bookDemoButton.style.opacity = "1";
+		const modalOverlay = document.getElementById("modalOverlay");
+		modalOverlay.style.display = "none";
+		
+    } else {
+      emailError.style.display = "inline";
+      bookDemoButton.style.pointerEvents = "none";
+      bookDemoButton.style.opacity = "0.5";
+    }
+  });
+
+  emailInput1.addEventListener("input", function () {
+    if (officialEmailPattern.test(emailInput1.value)) {
+      emailError1.style.display = "none";
+      bookDemoButton1.style.pointerEvents = "auto";
+      bookDemoButton1.style.opacity = "1";
+		const modalOverlay = document.getElementById("modalOverlay");
+		modalOverlay.style.display = "none";
+    } else {
+      emailError1.style.display = "inline";
+      bookDemoButton1.style.pointerEvents = "none";
+      bookDemoButton1.style.opacity = "0.5";
+    }
+  });
+
+});
+
 </script>

@@ -55,11 +55,11 @@ function loadModal() {
             })
               .then((response) => response.text())
               .then((data) => {
-                alert(data); // Show the PHP response
-              })
-              .catch((error) => {
-                console.error("Error:", error);
-                alert("An error occurred while sending the message.");
+                // alert(data); // Show the PHP response
+                const modalOverlay = document.getElementById("modalOverlay");
+                modalOverlay.style.display = "none";
+                emailForm.reset();
+                window.location.reload();
               });
           } else {
             emailError.style.display = "inline";

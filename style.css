@@ -212,8 +212,8 @@ body {
     outline: 0;
   }
   select option {
-    background-color: #f0a500;
-    color: #fff;
+    background-color: #fff;
+    color: #003152;
   }
   .input-group {
     margin-bottom: 1em;
@@ -3643,12 +3643,16 @@ a.pro {
   height: 100%;
 }
 .contact-us .contact-us-form {
+  background: #003152;
   padding: 50px 40px;
+}
+.contact-us .contact-us-form label {
+  color: #fff;
 }
 .contact-us .contact-us-form h2 {
   position: relative;
   font-size: 32px;
-  color: #333;
+  color: #fff;
   font-weight: 600;
   line-height: 27px;
   text-transform: capitalize;
@@ -4565,8 +4569,8 @@ corporate */
   margin-left: 100px;
 
   p {
-    font-size: 22px;
-    width: 700px;
+    font-size: 18px;
+    width: 100%;
     color: white;
     margin-top: 10px;
   }
@@ -4777,7 +4781,7 @@ corporate */
   }
 
   .animate-report-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.3);
   }
 
   .report-image-container {
@@ -4870,14 +4874,14 @@ corporate */
 
   .card:hover {
     transform: translateY(-10px) scale(1.05);
-    background-color: #ec9707;
+    background-color: #fff;
     .card-title {
-      color: white !important;
+      color: #000 !important;
     }
   }
 
   .square-card {
-    background-color: #ffffff;
+    background-color: #ec9707;
     color: #003152;
     transition: box-shadow 0.3s ease;
     min-height: 304px;
@@ -4888,7 +4892,7 @@ corporate */
   }
 
   .card-title {
-    color: #ec9707;
+    color: #fff;
     font-size: 17px;
   }
 

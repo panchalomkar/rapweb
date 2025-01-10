@@ -155,12 +155,13 @@
                     })
                         .then(response => response.text())
                         .then(data => {
-                            alert(data);  // Show the PHP response
+                           
+                            const formData = new FormData(emailForm);
+                            modalOverlay.style.display = "inline";
+                            emailForm.reset();
+                            window.location.reload();
                         })
-                        .catch(error => {
-                            console.error("Error:", error);
-                            alert("An error occurred while sending the message.");
-                        });
+                    
                 } else {
                     emailError.style.display = "inline";
                 }
