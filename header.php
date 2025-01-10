@@ -166,9 +166,7 @@
                                                     <ul class="dropdown-submenu">
                                                         <li><a href="index.php?page=video-creation"><span
                                                                     class="mr-1"><img src="img/videoe.png" width="20px"
-                                                                        alt></span>AI-Powered
-                                                                Video
-                                                                Creator</a></li>
+                                                                        alt></span>AI Powerd Video Creation</a></li>
                                                         <li><a href="index.php?page=smart-video"><span class="mr-1"><img
                                                                         src="img/videot.png" width="20px"
                                                                         alt></span>Smart
