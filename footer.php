@@ -1,7 +1,7 @@
 <footer id="footer" class="footer ">
 
     <!-- Footer Top -->
-    <div class="footer-top" style="background-image:url('img/footer1.svg'); background-repeat: no-repeat;
+    <div class="footer-top" style="background-image:url('img/footer.webp'); background-repeat: no-repeat;
     background-size: cover;">
         <div class="container">
             <div class="row">
@@ -92,9 +92,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer">
-                        <h2>Contact Us</h2>
-                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod
-                            tempor incididunt.</p>
+                        <h2>Our Certifications</h2>
+                        <div class="d-flex flex-row gap-2"> <img src="img/award/1.svg" style="width:80px" alt="">
+                            <img src="img/award/2.svg" alt="" style="width:80px">
+                            <img src="img/award/3.svg" alt="" style="width:90px">
+                        </div>
                         <ul class="social mt-5">
                             <li><a href="https://www.linkedin.com/company/raptechsolutions/?viewAsMember=true"><i
                                         class="icofont-linkedin" style="font-size: 20px;"></i></a></li>
@@ -108,15 +110,6 @@
                             <li><a href="https://www.facebook.com/pg/RAPTechSolutions/posts/"><i
                                         class="icofont-facebook" style="font-size: 24px;"></i></a></li>
                         </ul>
-                        <!-- <form action="mail/mail.php" method="get" target="_blank"
-                            class="newsletter-inner">
-                            <input name="email" placeholder="Email Address" class="common-input"
-                                onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Your email address'" required type="email">
-                            <button class="button"><i class="icofont icofont-paper-plane"></i></button>
-                        </form> -->
-
-                        <!-- End Social -->
                     </div>
                 </div>
             </div>
