@@ -97,6 +97,9 @@
                             <img src="img/award/2.svg" alt="" style="width:80px">
                             <img src="img/award/3.svg" alt="" style="width:90px">
                         </div>
+                        <div class="d-flex flex-row gap-2">
+                            <img src="img/award/Hipaa.webp" alt="" style="width:90px">
+                        </div>
                         <ul class="social mt-5">
                             <li><a href="https://www.linkedin.com/company/raptechsolutions/?viewAsMember=true"><i
                                         class="icofont-linkedin" style="font-size: 20px;"></i></a></li>

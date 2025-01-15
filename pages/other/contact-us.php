@@ -74,8 +74,8 @@
                                 <div class="col-lg-6">
                                     <div class="form-group input-group input-group-icon ">
 
-                                        <input type="text" name="phone" placeholder="Phone" required>
-                                        <div class="input-icon"><i class="fa fa-phone"></i></div>
+                                        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                                        <div class="input-icon"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -89,9 +89,11 @@
                                     <div class="input-group">
                                         <select style="padding:10px" name="product">
                                             <option style="color:red;">Not Select</option>
-                                            <option value="AI-Powered Educational LMS"> AI-Powered Educational LMS
+                                            <option> AI-Powered Corporate LMS
                                             </option>
-                                            <option>AI-Powered Video Creator</option>
+                                            <option> AI-Powered Educational LMS
+                                            </option>
+                                            <option>AI-Powered Video Creation</option>
                                             <option>Smart Video Tool</option>
                                             <option>Smart Presentations Tool</option>
                                             <option>360 Virtual Reality Tool</option>
@@ -105,8 +107,9 @@
                                             <option style="color:red;">Not Select</option>
                                             <option>Custom E-learning</option>
                                             <option> Learning App Development</option>
+                                            <option> Integrations</option>
                                             <option>Moodle UI/UX Customization</option>
-                                            <option value="">Moodle Plugin Development</option>
+                                            <option value>Moodle Plugin Development</option>
 
                                         </select>
                                     </div>
@@ -121,15 +124,9 @@
 
                                 <div class="col-12">
                                     <div class="form-group login-btn">
-                                        <button style="width: 100px; color:#003152; background:#ec9707;" class="btn"
-                                            name="send" value="Send">Send</button>
+                                        <button style="width: 100px; color:#003152; background:#ec9707;" id="sendbtn"
+                                            class="btn" name="send" value="Send">Send</button>
                                     </div>
-                                    <!-- <div class="checkbox">
-                                        <label class="checkbox-inline" for="2"><input
-                                                name="news" id="2"
-                                                type="checkbox">Do you want to
-                                            subscribe our Newsletter ?</label>
-                                    </div> -->
                                 </div>
                             </div>
                         </form>
@@ -169,37 +166,12 @@
 
 </section>
 
-<!-- <script>
-    document.getElementById("emailForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form from submitting normally
+<script type="text/javascript" src="js/intlTelInput.js"></script>
+<script>
+    var inputc = document.querySelector("#phone");
+    window.intlTelInput(inputc, {});
 
-        const emailInput = document.getElementById("email");
-        const emailError = document.getElementById("emailError");
-
-        // Regular expression to validate emails except Gmail
-        const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
-        if (officialEmailPattern.test(emailInput.value)) {
-            emailError.style.display = "none";
-
-            // Collect form data
-            const formData = new FormData(document.getElementById("emailForm"));
-
-            // Send data to the PHP file using AJAX (fetch)
-            fetch("send_email.php", {
-                method: "POST",
-                body: formData,
-            })
-                .then(response => response.text())
-                .then(data => {
-                    alert(data);  // Show the PHP response
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("An error occurred while sending the message.");
-                });
-        } else {
-            emailError.style.display = "inline";
-        }
+    document.getElementById("sendbtn").addEventListener("click", function () {
+        window.location.reload(); // Reloads the current page
     });
-
-</script> -->
+</script>

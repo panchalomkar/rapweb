@@ -98,7 +98,7 @@
 <!--/ End Slider Area -->
 
 <!-- common popup form -->
-<div class="modal-overlay" id="modalOverlay">
+<div class="modal-overlay hide-scrollbars" id="modalOverlay">
 	<div class="modal-box" style="background-color:#003152;">
 		<span class="dismiss-btn" id="dismissModal">&times;</span>
 		<h2 class="text-white mb-3">Book A Demo</h2>
@@ -158,10 +158,8 @@
 					<div
 						class="form-group input-group input-group-icon ">
 
-						<input type="text" name="phone"
-							placeholder="Phone" required>
-						<div class="input-icon"><i
-								class="fa fa-phone"></i></div>
+						<input type="tel" id="phone" name="phone" placeholder="Phone" required>
+						<div class="input-icon"></div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -176,11 +174,13 @@
 				<div class=" col-lg-6 text-left ">
 					<label for="Product" class="text-white">Product</label>
 					<div class="input-group">
-						<select style="padding:10px;" name="product">
+						<select style="padding:10px;" class="nice-select" name="product">
 							<option style="color:red;">Not Select</option>
-							<option value="AI-Powered Educational LMS"> AI-Powered Educational LMS
+							<option> AI-Powered Corporate LMS
 							</option>
-							<option>AI-Powered Video Creator</option>
+							<option> AI-Powered Educational LMS
+							</option>
+							<option>AI-Powered Video Creation</option>
 							<option>Smart Video Tool</option>
 							<option>Smart Presentations Tool</option>
 							<option>360 Virtual Reality Tool</option>
@@ -190,10 +190,11 @@
 				<div class="col-lg-6 text-left ">
 					<label for="Product" class="text-white">Service Type</label>
 					<div class="input-group">
-						<select style="padding:10px" name="services">
+						<select style="padding:10px" class="nice-select" name="services">
 							<option style="color:red;">Not Select</option>
 							<option>Custom E-learning</option>
 							<option> Learning App Development</option>
+							<option> Integrations</option>
 							<option>Moodle UI/UX Customization</option>
 							<option value>Moodle Plugin Development</option>
 
@@ -569,7 +570,8 @@
 <!--/ End Call to action -->
 <!--/ award end -->
 <!--next award-->
-<div class="section p-0 pb-4">
+<div class="section p-0 pb-4"
+	style="display: grid; justify-content: center; align-items: center;">
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="section-title">
@@ -580,7 +582,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="awards-container" style="margin-left: 70px;">
+	<div class="awards-container" style="margin-left: 10px;">
 		<div class="award-card">
 			<img src="img/award/244.png" alt="Award Icon 1">
 			<h3>2024</h3>
@@ -619,7 +621,7 @@
 	<button class="close-btn" id="close-btn">&times;</button>
 	<iframe
 		id="video-iframe"
-		src="https://www.youtube.com/embed/NcAuao7ULcw?autoplay=1"
+		src="https://www.youtube.com/embed/NcAuao7ULcw?autoplay=1&rel=0"
 		title="YouTube video player"
 		allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
 		allowfullscreen>
@@ -669,7 +671,10 @@
             border: none;
         }
 </style>
+<script type="text/javascript" src="js/intlTelInput.js"></script>
 <script>
+	   var inputc = document.querySelector("#phone");
+    window.intlTelInput(inputc, {});
 	  // Get elements
 	  const videoOverlay = document.getElementById('video-overlay');
         const closeBtn = document.getElementById('close-btn');
@@ -726,6 +731,7 @@
   const bookDemoButton = document.getElementById("bookDemoButton");
   const bookDemoButton1 = document.getElementById("bookDemoButton1");
   const modalOverlay = document.getElementById("modalOverlay");
+  const popemail = document.getElementById("email");
 
   // Regular expression to validate official emails
   const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
@@ -737,6 +743,7 @@
         errorElement.style.display = "none";
         buttonElement.style.pointerEvents = "auto";
         buttonElement.style.opacity = "1";
+		popemail.value = inputElement.value;
         if (modalOverlay) {
           modalOverlay.style.display = "none";
         }

@@ -2,6 +2,8 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +14,9 @@
 
     <!-- Title -->
     <title>Raptech Solutions</title>
-
+    <link href="./css/demo.css" rel="stylesheet">
+    <link href="./css/intlTelInput.css" rel="stylesheet">
+    <link href="./css/intlTelInput.min.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.svg">
 
@@ -20,7 +24,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
-
+    <!-- Add these links to the head section of your HTML -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Nice Select CSS -->
@@ -91,11 +95,21 @@
         (function () {
             var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
             s1.async = true;
-            s1.src = 'https://embed.tawk.to/672af6524304e3196addbf79/1ibvt4dmb';
+            s1.src = 'https://embed.tawk.to/6255b1c9b0d10b6f3e6d3c31/1g0fbsvea';
             s1.charset = 'UTF-8';
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+        // var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        // (function () {
+        //     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        //     s1.async = true;
+        //     s1.src = 'https://embed.tawk.to/672af6524304e3196addbf79/1ibvt4dmb';
+        //     s1.charset = 'UTF-8';
+        //     s1.setAttribute('crossorigin', '*');
+        //     s0.parentNode.insertBefore(s1, s0);
+        // })();
+
     </script>
     <!--End of Tawk.to Script-->
 </head>
