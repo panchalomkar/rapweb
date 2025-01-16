@@ -4782,6 +4782,7 @@ corporate */
 
   .feature-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #ec9707;
   }
 
   .main-card {
@@ -5721,8 +5722,7 @@ corporate */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
+    background: transparent;
   }
 
   @keyframes fadeInRight {
