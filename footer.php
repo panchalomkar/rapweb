@@ -156,6 +156,40 @@
             }
         });
     });
+
+    // Check if the videoOverlay element exists in the DOM
+    const videoOverlay = document.getElementById('video-overlay');
+
+    if (videoOverlay) {
+        const closeBtn = document.getElementById('close-btn');
+        const videoIframe = document.getElementById('video-iframe');
+
+        // Automatically show the video popup when the page loads
+        window.onload = function () {
+            videoOverlay.classList.remove('hidden');
+        };
+
+        // Function to close the popup and stop the video
+        const closePopup = () => {
+            videoOverlay.classList.add('hidden');
+            // Stop the video by resetting the iframe src
+            videoIframe.src = "";
+            // Restore the video URL (without autoplay for future use)
+            // videoIframe.src = "https://www.youtube.com/embed/ltAQkMzx-R4";
+        };
+
+        // Close popup on close button click
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closePopup);
+        }
+
+        // Close popup when clicking on the overlay (outside the iframe)
+        videoOverlay.addEventListener('click', (e) => {
+            if (e.target === videoOverlay) {
+                closePopup();
+            }
+        });
+    }
 </script>
 
 </html>

@@ -38,7 +38,7 @@
             <h3>Learning Solutions in Action
             </h3>
             <img width="50px" data-src="img/section-img.png"
-                alt="#" class="lazy-load-img">
+                alt="#" class="lazy-load-img mt-2">
             <p>Download Case Study
             </p>
         </div>
@@ -46,7 +46,7 @@
     </div>
 </div>
 
-<section class="features-section">
+<section class="features-section pb-0 pt-1">
     <div class>
 
         <!-- Feature 1: Class Wise Student's Performance Analysis -->
@@ -64,15 +64,15 @@
                     solutions
                     revolutionized training efficiency and workforce
                     development in the manufacturing sector </p>
-                <a href="book_form.html"
-                    class="btn btn-primary demo-button">Book
+                <a href="#"
+                    class="btn btn-primary demo-button trigger-modal-btn1">Book
                     a Demo</a>
             </div>
             <!-- Image on the Right with Animation -->
             <div class="col-lg-6 col-md-12 image-container">
                 <img data-src="img/manufacturing1.svg"
-                    alt="img"
-                    class="lazy-load-img img-fluid rounded feature-image animate__animated animate__fadeInRight">
+                    alt="img" style="width: 60%;"
+                    class="lazy-load-img img-fluid rounded animate__animated animate__fadeInRight">
             </div>
         </div>
 
@@ -82,8 +82,8 @@
             <!-- Image on the Left with Animation -->
             <div class="col-lg-6 col-md-12 image-container">
                 <img data-src="img/itsector.svg"
-                    alt="img"
-                    class="img-fluid lazy-load-img rounded feature-image animate__animated animate__fadeInLeft">
+                    alt="img" style="width: 60%;"
+                    class="img-fluid lazy-load-img rounded animate__animated animate__fadeInLeft">
             </div>
             <!-- Text on the Right -->
             <div class="col-lg-6 col-md-12 text-container">
@@ -99,8 +99,8 @@
                     in the IT sector, enhancing skills acquisition and
                     operational efficiency
                 </p>
-                <a href="book_form.html"
-                    class="btn btn-primary demo-button">Learn
+                <a href="#"
+                    class="btn btn-primary demo-button trigger-modal-btn1">Learn
                     More</a>
             </div>
         </div>
@@ -122,15 +122,15 @@
                     engagement in schools and universities
 
                 </p>
-                <a href="book_form.html"
-                    class="btn btn-primary demo-button">Book
+                <a href="#"
+                    class="btn btn-primary demo-button trigger-modal-btn1">Book
                     a Demo</a>
             </div>
             <!-- Image on the Right with Animation -->
             <div class="col-lg-6 col-md-12 image-container">
                 <img data-src="img/educationals.svg"
-                    alt="image"
-                    class=" lazy-load-img img-fluid rounded feature-image animate__animated animate__fadeInRight">
+                    alt="image" style="width: 60%;"
+                    class=" lazy-load-img img-fluid rounded animate__animated animate__fadeInRight">
             </div>
         </div>
 
@@ -140,8 +140,8 @@
             <!-- Image on the Left with Animation -->
             <div class="col-lg-6 col-md-12 image-container">
                 <img data-src="img/insurancei.svg"
-                    alt="image"
-                    class="lazy-load-img img-fluid rounded feature-image animate__animated animate__fadeInLeft">
+                    alt="image" style="width: 60%;"
+                    class="lazy-load-img img-fluid rounded animate__animated animate__fadeInLeft">
             </div>
             <!-- Text on the Right -->
             <div class="col-lg-6 col-md-12 text-container">
@@ -158,8 +158,8 @@
                     learning pathways
 
                 </p>
-                <a href="book_form.html"
-                    class="btn btn-primary demo-button">Learn
+                <a href="#"
+                    class="btn btn-primary demo-button trigger-modal-btn1">Learn
                     More</a>
             </div>
         </div>
@@ -179,17 +179,152 @@
                     with AI-driven learning solutions, enhancing employee
                     performance and customer satisfaction
                 </p>
-                <a href="book_form.html"
-                    class="btn btn-primary demo-button">Get
+                <a href="#"
+                    class="btn btn-primary demo-button trigger-modal-btn1">Get
                     Free Trial</a>
             </div>
             <!-- Image on the Right with Animation -->
             <div class="col-lg-6 col-md-12 image-container">
                 <img data-src="img/retails.svg"
-                    alt="image"
-                    class=" lazy-load-img img-fluid rounded feature-image animate__animated animate__fadeInRight">
+                    alt="image" style="width: 60%;"
+                    class=" lazy-load-img img-fluid rounded animate__animated animate__fadeInRight">
             </div>
         </div>
 
     </div>
 </section>
+<div class="modal-overlay hide-scrollbars" id="modalOverlay">
+    <div class="modal-box" style="background-color:#003152;">
+        <span class="dismiss-btn" id="dismissModal">&times;</span>
+        <h2 class="text-white mb-3">Book A Demo</h2>
+        <form id="emailForm" class="contact-form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div
+                        class="input-group input-group-icon">
+                        <input name="name" type="text"
+                            placeholder="Full Name"
+                            required />
+                        <div class="input-icon"><i
+                                class="fa fa-user"></i></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div
+                        class=" input-group input-group-icon ">
+
+                        <input type="text" name="designation"
+                            placeholder="Designation" required>
+                        <div class="input-icon"><i
+                                class="icofont-worker"></i></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="form-group input-group input-group-icon ">
+
+                        <input type="text" name="company"
+                            placeholder="Company"
+                            required>
+                        <div class="input-icon"><i
+                                class="icofont-worker"></i></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div
+                        class="form-group input-group input-group-icon ">
+
+                        <input type="email" id="email"
+                            name="email"
+                            placeholder="Enter your official email"
+                            required>
+                        <div class="input-icon"><i
+                                class="icofont-email"></i></div>
+
+                        <span id="emailError" class="error">Please
+                            enter a valid official email
+                            (e.g., user@company.com)</span>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="form-group input-group input-group-icon ">
+
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="Phone" required>
+                        <div class="input-icon"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="form-group input-group input-group-icon ">
+                        <input type="text" name="subject"
+                            placeholder="Subject" required>
+                        <div class="input-icon"><i
+                                class="icofont-question-circle"></i></div>
+                    </div>
+                </div>
+                <div class=" col-lg-6 text-left ">
+                    <label for="Product" class="text-white">Product</label>
+                    <div class="input-group">
+                        <select style="padding:10px;" class="nice-select"
+                            name="product">
+                            <option style="color:red;">Not Select</option>
+                            <option> AI-Powered Corporate LMS
+                            </option>
+                            <option> AI-Powered Educational LMS
+                            </option>
+                            <option>AI-Powered Video Creation</option>
+                            <option>Smart Video Tool</option>
+                            <option>Smart Presentations Tool</option>
+                            <option>360 Virtual Reality Tool</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-left ">
+                    <label for="Product" class="text-white">Service Type</label>
+                    <div class="input-group">
+                        <select style="padding:10px" class="nice-select"
+                            name="services">
+                            <option style="color:red;">Not Select</option>
+                            <option>Custom E-learning</option>
+                            <option> Learning App Development</option>
+                            <option> Integrations</option>
+                            <option>Moodle UI/UX Customization</option>
+                            <option value>Moodle Plugin Development</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div
+                        class="form-group input-group input-group-icon">
+
+                        <textarea name="message"
+                            placeholder="Your Message" required></textarea>
+                        <div class="input-icon"><i
+                                class="icofont-ui-message"></i></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group login-btn">
+                        <button style="width: 150px; background-color:#ec9707;"
+                            class="btn" type="submit">Request Demo</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script type="text/javascript" src="js/intlTelInput.js"></script>
+<script>
+    	   var inputc = document.querySelector("#phone");
+    window.intlTelInput(inputc, {});
+	  // Get elements
+
+</script>
