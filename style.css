@@ -329,7 +329,7 @@ body {
     text-align: center;
     pointer-events: none;
   }
-  .input-group-icon .input-icon:after {
+  /* .input-group-icon .input-icon:after {
     position: absolute;
     top: 0.6em;
     bottom: 0.6em;
@@ -342,7 +342,7 @@ body {
     -o-transition: 0.35s ease-in-out;
     transition: 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
-  }
+  } */
   .input-group-icon .input-icon i {
     -webkit-transition: 0.35s ease-in-out;
     -moz-transition: 0.35s ease-in-out;
@@ -709,6 +709,10 @@ nav .nav {
   float: left;
   margin-top: 3px;
 }
+.header .logo1 {
+  float: left;
+  margin-top: 3px;
+}
 .header .navbar {
   background: none;
   box-shadow: none;
@@ -800,6 +804,11 @@ nav .nav {
   margin: 0;
 }
 .header .single-widget .logo {
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
+}
+.header .single-widget .logo1 {
   margin: 0;
   padding: 0;
   margin-top: 7px;
@@ -973,6 +982,11 @@ nav .nav {
 .header .logo {
   background: #fff;
   border-radius: 10px;
+  display: none;
+}
+.header .logo1 {
+  border-radius: 10px;
+  display: block;
 }
 .nav.menu li .dropdown li a {
   color: #003152 !important;
@@ -986,6 +1000,16 @@ nav .nav {
   .get-quote .btn {
     background-color: #003152 !important;
     color: #ffffff !important;
+  }
+
+  .logo {
+    background: #fff;
+    border-radius: 10px;
+    display: block !important;
+  }
+  .logo1 {
+    border-radius: 10px;
+    display: none !important;
   }
 }
 /*=========================
@@ -4468,7 +4492,7 @@ a.pro {
   position: relative;
 }
 .footer .footer-top {
-  padding: 100px 0px;
+  padding: 10px 0px;
   position: relative;
 }
 .footer .footer-top:before {

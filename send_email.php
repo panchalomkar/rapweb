@@ -59,14 +59,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-        $mail->Username = 'panchalomkar222@gmail.com';                     //SMTP username
-        $mail->Password = 'zdgs kqjm vnpt ctug';                               //SMTP password
+        $mail->Username = 'rax@raptechsolutions.com';                     //SMTP username
+        $mail->Password = 'rbau bsjz zdbi wosa';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('panchalomkar222@gmail.com', 'Contact form');
-        $mail->addAddress('panchalomkar222@gmail.com', 'omkar');
+        $mail->setFrom('rax@raptechsolutions.com', 'Contact form');
+        $mail->addAddress('rax@raptechsolutions.com', 'Rax');
+        $mail->addAddress('ashutosh@raptechsolutions.com', 'Ashutosh');
         // Content
         $mail->isHTML(true);
         $mail->Subject = $subject;

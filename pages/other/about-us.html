@@ -99,13 +99,18 @@
 </div>
 <!-- end users -->
 <!-- start video section -->
-<div class="about-us mt-5 mb-5" id="plugin">
-    <div class="container-fluid block-bg d-flex ">
+<div id="virtual" class="mt-5 ">
+    <div class="container-fluid block-bg d-flex" style="align-items: center;">
         <div class="video-section">
-            <video controls>
-                <source src="your-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
+            <iframe
+                style="width: 86%; height: 300px; border:none; border-radius:8px;"
+                id="video-iframe"
+                src="https://www.youtube.com/embed/NcAuao7ULcw?autoplay=1&rel=0"
+                title="YouTube video player"
+                allow="encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="content-section">
             <h2>Welcome to RAP Learning
@@ -122,13 +127,12 @@
                 it more engaging, efficient, and effective.
             </p>
             <div class="col-12 demo_btn mt-4">
-                <div class="get-quote d-flex">
+                <div class="d-flex">
                     <a href="#" class="btn trigger-modal-btn1"
                         style="background: #ec9707;">Book A Demo</a>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 

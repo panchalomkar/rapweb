@@ -130,6 +130,9 @@
                             <div class="logo">
                                 <a href="index.php?page=home"><img src="img/RAP.svg" alt="#"></a>
                             </div>
+                            <div class="logo1">
+                                <a href="index.php?page=home"><img src="img/rapwhitelogo.png" alt="#"></a>
+                            </div>
                             <!-- End Logo -->
                             <!-- Mobile Nav -->
                             <div class="mobile-nav"></div>
