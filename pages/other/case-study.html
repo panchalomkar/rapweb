@@ -296,4 +296,56 @@
     window.intlTelInput(inputc, {});
 	  // Get elements
     
+  document.addEventListener("DOMContentLoaded", () => {
+const buttons = document.querySelectorAll(".trigger-modal-btn1");
+const modalOverlay = document.getElementById("modalOverlay");
+const emailForm = document.getElementById("emailForm");
+const emailInput = document.getElementById("email");
+const emailError = document.getElementById("emailError");
+
+let selectedPDF = ""; // Store the PDF to be downloaded
+
+// Open the modal when a button is clicked
+buttons.forEach(button => {
+button.addEventListener("click", (event) => {
+event.preventDefault();
+selectedPDF = button.getAttribute("data-pdf");
+modalOverlay.classList.remove("hidden");
+});
+});
+
+// Validate email and download the PDF on form submission
+emailForm.addEventListener("submit", (event) => {
+event.preventDefault(); // Prevent default form submission
+
+const officialEmailPattern =
+/^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
+
+if (officialEmailPattern.test(emailInput.value)) {
+emailError.style.display = "none";
+
+// Close the modal
+modalOverlay.classList.add("hidden");
+
+// Trigger the PDF download
+const link = document.createElement("a");
+link.href = selectedPDF;
+link.download = selectedPDF;
+link.click();
+
+// Optionally, reset the form and email input
+emailForm.reset();
+window.location.reload();
+} else {
+emailError.style.display = "inline";
+}
+});
+
+// Optional: Close the modal when clicking outside the form
+modalOverlay.addEventListener("click", (event) => {
+if (event.target === modalOverlay) {
+modalOverlay.classList.add("hidden");
+}
+});
+});
 </script>
