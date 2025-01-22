@@ -51,15 +51,18 @@
     </div>
 </div>
 <!-- end section title -->
-
-<!-- video content section start -->
 <div id="virtual">
-    <div class="container-fluid block-bg d-flex">
+    <div class="container-fluid block-bg d-flex" style="align-items: center;">
         <div class="video-section">
-            <video controls>
-                <source src="your-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
+            <iframe
+                style="width: 86%; height: 300px; border:none; border-radius:8px;"
+                id="video-iframe"
+                src="https://www.youtube.com/embed/Nz4cCfi7KCs?autoplay=1&rel=0"
+                title="YouTube video player"
+                allow="encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="content-section">
             <h2 class="d-flex align-items-center "> <svg
@@ -100,7 +103,6 @@
         </div>
     </div>
 </div>
-
 <!-- end video content section -->
 <!-- section title -->
 <div class="row mt-5">
