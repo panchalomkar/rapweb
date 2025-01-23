@@ -137,6 +137,16 @@
 
             </div>
         </div>
+        <div class="modal-overlay hide-scrollbars" id="successModal"
+            style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1000;">
+            <div class="modal-box"
+                style="background-color: #fff; color: #003152; margin: 2% auto; padding: 20px; border-radius: 8px; width: 40%; text-align: center; position: relative;">
+                <span class="dismiss-btn" id="dismissModal1"
+                    style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 20px; color: #003152;">&times;</span>
+                <h5 class=" text-primary mb-3">Request has been submitted
+                    successfully!</h5>
+            </div>
+        </div>
         <script>
             document.getElementById("emailForm").addEventListener("submit", function (event) {
                 event.preventDefault(); // Prevent form from submitting normally
@@ -165,7 +175,6 @@
                             emailForm.reset();
                             window.location.reload();
                         })
-                    
                 } else {
                     emailError.style.display = "inline";
                 }

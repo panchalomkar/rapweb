@@ -59,7 +59,8 @@ function loadModal() {
                 const modalOverlay = document.getElementById("modalOverlay");
                 modalOverlay.style.display = "none";
                 emailForm.reset();
-                window.location.reload();
+                // window.location.reload();
+                showModal();
               });
           } else {
             emailError.style.display = "inline";
@@ -67,6 +68,22 @@ function loadModal() {
         });
     })
     .catch((error) => console.error("Failed to load modal HTML:", error));
+  function showModal() {
+    const modal = document.getElementById("successModal");
+    modal.style.display = "block";
+    // Auto-close after 3 seconds
+    setTimeout(() => {
+      window.location.reload();
+      modal.style.display = "none";
+    }, 3000);
+  }
+  // Function to hide the modal when the dismiss button is clicked
+  document
+    .getElementById("dismissModal1")
+    .addEventListener("click", function () {
+      window.location.reload();
+      document.getElementById("successModal").style.display = "none";
+    });
 }
 
 // Call the function to load modal
