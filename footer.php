@@ -121,42 +121,114 @@
         </div>
     </div>
     <!--/ End Footer Top -->
+    <div class="modal-overlay hide-scrollbars" id="modalOverlay">
+        <div class="modal-box" style="background-color:#003152;">
+            <span class="dismiss-btn" id="dismissModal">&times;</span>
+            <h2 class="text-white mb-3">Book A Demo</h2>
+            <form id="emailForm" class="contact-form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-icon">
+                            <input name="name" type="text" placeholder="Full Name" required />
+                            <div class="input-icon"><i class="fa fa-user"></i></div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-6">
+                        <div class=" input-group input-group-icon ">
+
+                            <input type="text" name="designation" placeholder="Designation" required>
+                            <div class="input-icon"><i class="icofont-worker"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group input-group input-group-icon ">
+
+                            <input type="text" name="company" placeholder="Company" required>
+                            <div class="input-icon"><i class="icofont-worker"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group input-group input-group-icon ">
+
+                            <input type="email" id="email" name="email" placeholder="Enter your official email"
+                                required>
+                            <div class="input-icon"><i class="icofont-email"></i></div>
+
+                            <span id="emailError" class="error">Please
+                                enter a valid official email
+                                (e.g., user@company.com)</span>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group input-group input-group-icon ">
+
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                            <div class="input-icon"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group input-group input-group-icon ">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <div class="input-icon"><i class="icofont-question-circle"></i></div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-6 text-left ">
+                        <label for="Product" class="text-white">Product</label>
+                        <div class="input-group">
+                            <select style="padding:10px;" class="nice-select" name="product">
+                                <option style="color:red;">Not Select</option>
+                                <option> AI-Powered Corporate LMS
+                                </option>
+                                <option> AI-Powered Educational LMS
+                                </option>
+                                <option>AI-Powered Video Creation</option>
+                                <option>Smart Video Tool</option>
+                                <option>Smart Presentations Tool</option>
+                                <option>360 Virtual Reality Tool</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-left ">
+                        <label for="Product" class="text-white">Service Type</label>
+                        <div class="input-group">
+                            <select style="padding:10px" class="nice-select" name="services">
+                                <option style="color:red;">Not Select</option>
+                                <option>Custom E-learning</option>
+                                <option> Learning App Development</option>
+                                <option> Integrations</option>
+                                <option>Moodle UI/UX Customization</option>
+                                <option value>Moodle Plugin Development</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group input-group input-group-icon">
+
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <div class="input-icon"><i class="icofont-ui-message"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group login-btn">
+                            <button style="width: 150px; background-color:#ec9707;" class="btn" type="submit">Request
+                                Demo</button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
 </footer>
 <!--/ End Footer Area -->
 </body>
+<script type="text/javascript" src="js/intlTelInput.js"></script>
 <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-        const sliders = document.querySelectorAll(".single-slider");
-        sliders.forEach((slider) => {
-            const backgroundImage = slider.getAttribute("data-background");
-            if (backgroundImage) {
-                slider.style.backgroundImage = `url(${backgroundImage})`;
-            }
-        });
-
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Select all images with the 'lazy-load-img' class
-        const images = document.querySelectorAll('.lazy-load-img');
-
-        images.forEach((image) => {
-            const imageSrc = image.getAttribute('data-src');
-            if (imageSrc) {
-                image.setAttribute('src', imageSrc);
-            }
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const footers = document.querySelectorAll(".corporategif");
-        footers.forEach((footer) => {
-            const backgroundImage = footer.getAttribute("data-background");
-            if (backgroundImage) {
-                footer.style.backgroundImage = `url(${backgroundImage})`;
-            }
-        });
-    });
-
     // Check if the videoOverlay element exists in the DOM
     const videoOverlay = document.getElementById('video-overlay');
 
@@ -190,6 +262,68 @@
             }
         });
     }
+
+    var inputc = document.querySelector("#phone");
+    window.intlTelInput(inputc, {});
+    // Get elements
+    document.getElementById("emailForm").addEventListener("submit", function (event) {
+        event.preventDefault(); //
+        const emailInput = document.getElementById("email");
+        const emailError = document.getElementById("emailError");
+        const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
+        if (officialEmailPattern.test(emailInput.value)) {
+            emailError.style.display = "none";
+            showModal()
+            const modalOverlay = document.getElementById("modalOverlay");
+            modalOverlay.style.display = "none";
+        } else {
+            emailError.style.display = "inline";
+        }
+    });
+    function showModal() {
+        const modal = document.getElementById("successModal");
+        modal.style.display = "block";
+        // Auto-close after 3 seconds
+        setTimeout(() => {
+            window.location.reload();
+            modal.style.display = "none";
+        }, 3000);
+    }
+
+    document.getElementById("dismissModal1").addEventListener("click", function () {
+        window.location.reload();
+        document.getElementById("successModal").style.display = "none";
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const sliders = document.querySelectorAll(".single-slider");
+        sliders.forEach((slider) => {
+            const backgroundImage = slider.getAttribute("data-background");
+            if (backgroundImage) {
+                slider.style.backgroundImage = `url(${backgroundImage})`;
+            }
+        });
+
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select all images with the 'lazy-load-img' class
+        const images = document.querySelectorAll('.lazy-load-img');
+
+        images.forEach((image) => {
+            const imageSrc = image.getAttribute('data-src');
+            if (imageSrc) {
+                image.setAttribute('src', imageSrc);
+            }
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const footers = document.querySelectorAll(".corporategif");
+        footers.forEach((footer) => {
+            const backgroundImage = footer.getAttribute("data-background");
+            if (backgroundImage) {
+                footer.style.backgroundImage = `url(${backgroundImage})`;
+            }
+        });
+    });
 </script>
 
 </html>

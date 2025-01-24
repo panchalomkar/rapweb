@@ -6114,3 +6114,8 @@ corporate */
     transform: translateY(0);
   }
 }
+.small-icon {
+  width: 30px;
+  margin-right: 5px;
+  height: 30px;
+}

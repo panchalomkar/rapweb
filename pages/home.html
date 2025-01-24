@@ -634,39 +634,9 @@
 	</iframe>
 </div>
 
-<script type="text/javascript" src="js/intlTelInput.js"></script>
+<!-- <script type="text/javascript" src="js/intlTelInput.js"></script> -->
 <script>
-	   var inputc = document.querySelector("#phone");
-    window.intlTelInput(inputc, {});
-	  // Get elements
-	  document.getElementById("emailForm").addEventListener("submit", function(event) {
-      event.preventDefault(); //
-      const emailInput = document.getElementById("email");
-      const emailError = document.getElementById("emailError");
-	  const officialEmailPattern = /^[a-zA-Z0-9._%+-]+@(?!gmail\.)[a-zA-Z0-9-]+\.(com|org|net|edu)$/;
-      if (officialEmailPattern.test(emailInput.value)) {
-        emailError.style.display = "none";
-		showModal()
-		const modalOverlay = document.getElementById("modalOverlay");
-		modalOverlay.style.display = "none";
-      } else {
-        emailError.style.display = "inline";
-      }
-    });
-	function showModal() {
-    const modal = document.getElementById("successModal");
-    modal.style.display = "block";
-    // Auto-close after 3 seconds
-    setTimeout(() => {
-		window.location.reload();
-      modal.style.display = "none";
-    }, 3000);
-  }
-  // Function to hide the modal when the dismiss button is clicked
-  document.getElementById("dismissModal1").addEventListener("click", function () {
-	window.location.reload();
-    document.getElementById("successModal").style.display = "none";
-  });
+
 	document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("officialEmailInput");
   const emailInput1 = document.getElementById("officialEmailInput1");

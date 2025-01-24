@@ -58,15 +58,21 @@
       </iframe>
     </div>
     <div class="content-section">
-      <p>In today's fast-paced business environment, effective training is
-        essential for maintaining a competitive edge. Traditional
-        methods of training, such as instructor-led sessions, PDFs, and
-        PPTs, often fail to engage modern learners. That's where custom
-        e-learning solutions come into play. By leveraging dynamic
-        design, relevant storylines, and great narratives, custom
-        e-learning can transform existing training content into
-        interactive, engaging courses.
-      </p>
+      <div class="d-flex"><img src="img/training1.png" class="small-icon"
+          alt="icon"><p>Traditional
+          training methods like PDFs
+          and PPTs fail to engage modern
+          learners effectively.</p>
+      </div>
+      <div class="d-flex"><img class="small-icon"
+          style="width:25px; height: 25px;"
+          src="img/training2.png"
+          alt="icon1">
+        <p>Custom
+          e-learning boosts engagement
+          with interactive design,
+          compelling
+          storylines, and immersive training experiences.</p></div>
       <div class="col-12 demo_btn mt-4">
         <div class="d-flex">
           <a href="#" class="btn trigger-modal-btn1"
@@ -374,43 +380,43 @@ session_start();
 
 // Check if the instanceId is set in the session
 if (isset($_SESSION['instanceId'])) {
-    $instanceId = $_SESSION['instanceId'];
+$instanceId = $_SESSION['instanceId'];
 
-    // Prepare the API request to terminate the VM
-    $terminateApiUrl = "https://fd9zl3wa9g.execute-api.us-east-1.amazonaws.com/deve";
-    $postData = json_encode([
-        'InstanceId' => $instanceId
-    ]);
+// Prepare the API request to terminate the VM
+$terminateApiUrl = "https://fd9zl3wa9g.execute-api.us-east-1.amazonaws.com/deve";
+$postData = json_encode([
+'InstanceId' => $instanceId
+]);
 
-    // Initialize cURL
-    $ch = curl_init($terminateApiUrl);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'Content-Type: application/json'
-    ]);
+// Initialize cURL
+$ch = curl_init($terminateApiUrl);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+'Content-Type: application/json'
+]);
 
-    // Execute the cURL request
-    $response = curl_exec($ch);
-    curl_close($ch);
+// Execute the cURL request
+$response = curl_exec($ch);
+curl_close($ch);
 
-    // Handle the response
-    if ($response) {
-        $data = json_decode($response, true);
-        if (isset($data['statusCode']) && $data['statusCode'] == 200) {
-            echo json_encode(['success' => true]);
-        } else {
-            echo json_encode(['success' => false, 'message' => 'Failed to terminate VM']);
-        }
-    } else {
-        echo json_encode(['success' => false, 'message' => 'Error terminating VM']);
-    }
-
-    // Clear the instanceId from the session
-    unset($_SESSION['instanceId']);
+// Handle the response
+if ($response) {
+$data = json_decode($response, true);
+if (isset($data['statusCode']) && $data['statusCode'] == 200) {
+echo json_encode(['success' => true]);
 } else {
-    echo json_encode(['success' => false, 'message' => 'No instance found']);
+echo json_encode(['success' => false, 'message' => 'Failed to terminate VM']);
+}
+} else {
+echo json_encode(['success' => false, 'message' => 'Error terminating VM']);
+}
+
+// Clear the instanceId from the session
+unset($_SESSION['instanceId']);
+} else {
+echo json_encode(['success' => false, 'message' => 'No instance found']);
 }
 ?>
 <div class="row mt-5">

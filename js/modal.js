@@ -77,13 +77,6 @@ function loadModal() {
       modal.style.display = "none";
     }, 3000);
   }
-  // Function to hide the modal when the dismiss button is clicked
-  document
-    .getElementById("dismissModal1")
-    .addEventListener("click", function () {
-      window.location.reload();
-      document.getElementById("successModal").style.display = "none";
-    });
 }
 
 // Call the function to load modal

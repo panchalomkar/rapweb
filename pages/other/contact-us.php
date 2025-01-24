@@ -165,13 +165,3 @@
     </div>
 
 </section>
-
-<script type="text/javascript" src="js/intlTelInput.js"></script>
-<script>
-    var inputc = document.querySelector("#phone");
-    window.intlTelInput(inputc, {});
-
-    document.getElementById("sendbtn").addEventListener("click", function () {
-        window.location.reload(); // Reloads the current page
-    });
-</script>
