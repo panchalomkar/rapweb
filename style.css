@@ -559,7 +559,6 @@ body {
 /* General Style */
 
 .header {
-  padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: transparent !important;
   position: absolute;
@@ -6118,4 +6117,14 @@ corporate */
   width: 30px;
   margin-right: 5px;
   height: 30px;
+}
+
+.sch-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  margin-bottom: 60px;
+}
+.slider-font {
+  font-size: 28px !important;
 }
