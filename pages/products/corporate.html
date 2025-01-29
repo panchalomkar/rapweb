@@ -9,7 +9,7 @@
                 <div class="col-2 pt-2">
                     <!-- <img data-src="img/corporate-left.gif" alt
                         class="lazy-load-img"> -->
-                    <video style="width: 165px;" autoplay muted loop playsinline>
+                    <video class="header-img" autoplay muted loop playsinline>
                         <source src="img/corporate-left.webm" type="video/webm">
                     </video>
                 </div>
@@ -22,7 +22,7 @@
                     </p>
                 </div>
                 <div class="col-2 p-0">
-                    <video style="width: 165px;" autoplay muted loop playsinline>
+                    <video class="header-img" autoplay muted loop playsinline>
                         <source src="img/corporate-right.webm" type="video/webm">
                     </video>
                 </div>
@@ -54,7 +54,7 @@
 
             <div class="row">
                 <div class="col-4"></div>
-                <div class="col-4">
+                <div class="col-md-4 col-sm-6">
 
                     <div class="feature-list">
                         <div class="feature-item">
@@ -109,7 +109,7 @@
                     </div>
 
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="feature-list">
                         <div class="feature-item">
 
@@ -190,8 +190,7 @@
         <div class="row">
             <div class="col-lg-12 col-12">
                 <img src="img/flowcharts/lyfecycle.svg" alt>
-                <img
-                    style="position:relative; bottom:570px; margin-bottom:-350px ;"
+                <img class="computerimg"
                     width="350x" src="img/flowcharts/computer1.png"
                     alt="lms image">
             </div>
@@ -269,19 +268,21 @@
                         class="block-info heading_content p-2 d-flex flex-column flex-lg-row align-items-center"
                         style="height: auto;">
                         <!-- Image Section - Larger and Aligned Left -->
-                        <div class="col-lg-4 col-12 block-img p-0"
+                        <div
+                            class="col-lg-4 d-flex justify-content-center flex-column col-12 block-img p-0"
                             style="border-radius:0px;background: transparent;">
+                            <h3
+                                class="offthe-heading animate-heading text-white"><img
+                                    src="img/2.svg" width="50px"
+                                    style="margin-right: 10px;"
+                                    alt>Off-the-Shelf
+                                Courses</h3>
                             <img src="img/off.svg"
                                 alt="Off the Shelf Image"
                                 class="animated-img img-fluid">
                         </div>
                         <!-- Text Content Section -->
                         <div class="col-lg-8 col-12 text-white px-3">
-                            <h3 class=" animate-heading text-white"><img
-                                    src="img/2.svg" width="50px"
-                                    style="margin-right: 10px;"
-                                    alt>Off-the-Shelf
-                                Courses</h3>
                             <div class="info-content mt-3">
                                 <h4><img src="img/1.svg" width="40px"
                                         style="margin-right: 10px;"
@@ -338,7 +339,7 @@
                                         alt="Analytics Icon"
                                         class="img-fluid animate-img c-img"></span>
                                 <h3
-                                    class="animate-heading"
+                                    class="animate-heading offthe-heading"
                                     style="color:#ec9707">Comprehensive
                                     Reporting and Analytics</h3>
                             </div>
@@ -351,14 +352,14 @@
                         </div>
 
                         <!-- Report Image Section -->
-                        <div class="col-md-12 p-0 d-flex">
+                        <div class="col-md-12 col-sm-12 analytics p-0 d-flex">
                             <div
-                                class="col-md-6">
+                                class="col-md-6 col-sm-12 col-lg-6">
                                 <img src="img/reporta12.png"
                                     alt="Report Image">
                             </div>
                             <!-- Feature Cards -->
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-12 col-lg-6">
                                 <div class=" mb-3">
                                     <div
                                         class="card feature-card p-3 animate-card">
@@ -489,11 +490,12 @@
                             alt="Analytics Icon"
                             class="img-fluid animate-img c-img"></span>
                     <h3
-                        class="animate-heading" style="color:#ec9707">Skill Gap
+                        class="animate-heading offthe-heading"
+                        style="color:#ec9707">Skill Gap
                         Analysis</h3>
                 </div>
                 <div class="row">
-                    <div class="row col-6">
+                    <div class="row col-md-6 col-sm-12 ">
                         <!-- First Square Card -->
                         <div class="col-lg-6 col-md-6 mb-4">
                             <div class="card square-card  animate-card">
@@ -563,16 +565,17 @@
                             </div>
                         </div>
 
-                        <!-- CTA Button -->
-                        <div class="col-12 mt-4 text-center">
-                            <a href="#"
-                                class="btn animate-btn trigger-modal-btn1">Book
-                                A Demo</a>
-                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6"><img src="img/skillgap.svg"
+                    <div class="col-lg-6 col-sm-12  col-md-6"><img
+                            src="img/skillgap.svg"
                             alt></div>
                 </div>
+                <div class="col-12 mt-4 text-center">
+                    <a href="#"
+                        class="btn animate-btn trigger-modal-btn1">Book
+                        A Demo</a>
+                </div>
+
             </div>
             <!-- end skill gap -->
             <!-- start gamification -->
@@ -587,7 +590,8 @@
                             alt="Analytics Icon"
                             class="img-fluid animate-img c-img"></span>
                     <h3
-                        class="animate-heading" style="color:#ec9707">Gamification</h3>
+                        class="animate-heading offthe-heading"
+                        style="color:#ec9707">Gamification</h3>
                 </div>
 
                 <!-- Container with Central Image and Cards on Right -->
@@ -711,12 +715,12 @@
                         alt="on the job Icon"
                         class="img-fluid animate-img c-img"></span>
                 <h3
-                    class="animate-heading" style="color:#ec9707">On
+                    class="animate-heading offthe-heading" style="color:#ec9707">On
                     The Job Training</h3>
             </div>
             <div class=" card-item d-flex mt-2 mb-5">
 
-                <div class="content-container col-4">
+                <div class="content-container col-sm-12 col-md-4">
                     <p class="description">
                         On-the-job training offers personalized course
                         recommendations based on manager ratings to enhance
@@ -732,9 +736,9 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-8">
+                <div class=" col-sm-12 col-md-8 mb-2">
                     <img src="img/onthe1.svg"
-                        style="border-radius: 10px;min-width: 800px;box-shadow: 10px 10px 44px 8px #668193"
+                        style="border-radius: 10px;min-width: 100%;box-shadow: 10px 10px 44px 8px #668193"
                         alt="on the job trainig">
                 </div>
             </div>
@@ -752,7 +756,7 @@
                             alt="on the job Icon"
                             class="img-fluid animate-img"></span>
                     <h3
-                        class="animate-heading text-brand">Multi-Tenant</h3>
+                        class="animate-heading offthe-heading text-brand">Multi-Tenant</h3>
                 </div>
                 <div class="row align-items-center">
                     <!-- Image Section -->

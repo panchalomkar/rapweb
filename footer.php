@@ -93,14 +93,16 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer">
                         <h2>Our Certifications</h2>
-                        <div class="d-flex flex-row gap-2">
-                            <img src="img/award/1.svg" style="width:80px; margin: 5px;" alt="">
-                            <img src="img/award/2.svg" alt="" style="width:80px">
+                        <div class="col-md-12 d-flex flex-award mrml">
+                            <div class="d-flex col-md-6 gap-2 mrml">
+                                <img src="img/award/1.svg" style="width:80px; margin: 5px;" alt="">
+                                <img src="img/award/2.svg" alt="" style="width:80px">
 
-                        </div>
-                        <div class="d-flex flex-row gap-2">
-                            <img src="img/award/Hipaa.webp" alt="" style="width:90px">
-                            <img src="img/award/3.svg" alt="" style="width:90px">
+                            </div>
+                            <div class="d-flex col-md-6 mr-l gap-2 mrml">
+                                <img src="img/award/Hipaa.webp" alt="" style="width:90px">
+                                <img src="img/award/3.svg" alt="" class="award">
+                            </div>
                         </div>
                         <ul class="social mt-5">
                             <li><a href="https://www.linkedin.com/company/raptechsolutions/?viewAsMember=true"><i

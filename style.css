@@ -4699,18 +4699,13 @@ corporate */
 }
 .corporate-video {
   padding: 12px 0px !important;
-
   border-radius: 20px;
-
-  p {
-  }
   .demo_btn {
     display: flex;
     justify-content: center;
     a.btn {
       width: 200px;
       position: relative;
-      left: 153px;
       font-size: 17px;
     }
   }
@@ -5812,18 +5807,6 @@ corporate */
     transform: scale(1.02);
   }
 
-  @media (max-width: 768px) {
-    .video-section {
-      flex-direction: column;
-    }
-
-    .content,
-    .video-wrapper {
-      width: 100%;
-      padding: 15px;
-    }
-  }
-
   /* large content section code */
   .features-section {
     background-color: #003152;
@@ -6127,4 +6110,52 @@ corporate */
 }
 .slider-font {
   font-size: 28px !important;
+}
+.header-img {
+  width: 165px;
+}
+.computerimg {
+  position: relative;
+  bottom: 570px;
+  margin-bottom: -350px;
+}
+.video-img1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.large-img-video {
+  flex-direction: row-reverse;
+}
+.video-icon {
+  width: 80px;
+}
+.smartp-video,
+.smart-body-img {
+  flex-direction: row;
+}
+.mr-l {
+  margin-left: 7px;
+}
+.flex-award {
+  flex-direction: column;
+}
+.video-img5 {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+.vrvideo {
+  width: 86%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+.award {
+  width: 90px !important;
+}
+.mobile-col {
+  height: 400px;
 }

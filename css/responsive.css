@@ -422,7 +422,7 @@
     color: #2c2d3f;
     margin: 0;
     font-size: 0.875em;
-    background: transparent;
+    background: #fff;
   }
   .slicknav_nav li {
   }
@@ -1378,5 +1378,141 @@
   }
   .client_t {
     font-size: 19px;
+  }
+  .bread-inner {
+    h2 {
+      font-size: 14px !important;
+    }
+    p {
+      font-size: 10px !important;
+    }
+  }
+  .bread-inner {
+    margin-left: 0px !important;
+  }
+  .header-img {
+    width: 100%;
+  }
+
+  #training {
+    .card-item {
+      flex-direction: column-reverse;
+    }
+  }
+  .analytics {
+    flex-direction: column;
+  }
+  .computerimg {
+    position: relative;
+    bottom: 315px;
+    margin-bottom: -350px;
+    width: 100px;
+  }
+  .contact-us .single-info .content {
+    h3 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 9px;
+    }
+  }
+  .contact-us .single-info .content {
+    margin-left: 10px;
+  }
+  .contact-us .single-info .single-img {
+    max-width: 65px;
+  }
+  .c_features .single-info {
+    height: 175px;
+  }
+  .offthe-heading {
+    font-size: 20px;
+  }
+  .education-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .video-img {
+    object-fit: cover;
+    width: 70px;
+    height: auto;
+  }
+  .video-img1 {
+    object-fit: cover;
+    width: 60px;
+    height: auto;
+  }
+  .horizontal-card .card-vertical {
+    max-height: 100%;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    .video-section {
+      flex-direction: column-reverse;
+    }
+
+    .content,
+    .video-wrapper {
+      width: 100%;
+    }
+  }
+  .large-img-video {
+    flex-direction: column;
+  }
+  .video-icon {
+    width: 200px;
+  }
+  .smartp-video {
+    flex-direction: column-reverse;
+  }
+  .smart-heading {
+    font-size: 19px !important;
+    margin-top: 10px;
+  }
+  .smart-body-img {
+    flex-direction: column !important;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .mrml {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .flex-award {
+    flex-direction: row;
+  }
+  .video-img5 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .vrvideo {
+    width: 100% !important;
+  }
+  .mobile-col {
+    flex-direction: column;
+    height: 100% !important;
+  }
+  .vr-demo {
+    display: flex;
+    justify-content: center;
+  }
+  .vrvideo {
+    width: 86%;
+    height: 300px;
+    border: none;
+    padding: 5px !important;
+    border-radius: 8px;
+  }
+  .vrvideo1 {
+    width: 100% !important;
+  }
+  .award {
+    width: 85px !important;
+  }
+  .singleinfo {
+    padding: 40px 85px !important;
   }
 }

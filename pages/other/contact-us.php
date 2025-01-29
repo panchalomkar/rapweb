@@ -139,7 +139,7 @@
             <div class="row">
                 <!-- single-info -->
                 <div class="col-lg-6 col-12 ">
-                    <div class="single-info">
+                    <div class="single-info singleinfo">
                         <i class="icofont icofont-ui-call"></i>
                         <div class="content">
                             <h3>+917709105351</h3>
@@ -150,7 +150,7 @@
                 <!--/End single-info -->
                 <!-- single-info -->
                 <div class="col-lg-6 col-12 ">
-                    <div class="single-info">
+                    <div class="single-info singleinfo">
                         <i class="icofont-google-map"></i>
                         <div class="content">
                             <h3>Sierra Vista, Veerbhadra Nagar, Lane no. 5,
