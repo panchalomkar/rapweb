@@ -6159,3 +6159,24 @@ corporate */
 .mobile-col {
   height: 400px;
 }
+.video-img6 {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+.pluginiframe {
+  width: 86%;
+  height: 300px;
+}
+.liframe {
+  width: 86%;
+}
+.liframe1 {
+  width: 87%;
+}
+.video-img7 {
+  width: 96%;
+  height: 100%;
+  object-fit: cover;
+}
+
